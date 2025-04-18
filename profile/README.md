@@ -1,128 +1,157 @@
-![WhatsApp Image 2025-04-06 at 06 03 24 (1)](https://github.com/user-attachments/assets/20d4e5b8-748a-4765-b301-accabaea63fe)
+# 🌐 ADMOJO Protocol
 
-![WhatsApp Image 2025-04-06 at 05 53 26](https://github.com/user-attachments/assets/1e6948d4-4d05-4bd4-8f4f-57b16ca4387e)
+**Smarter Ads. Verified Views. Real Engagement.**
 
-https://github.com/user-attachments/assets/e347fe3f-adbd-4892-976f-4bcf7bedf830
+ADMOJO Protocol is a decentralized bridge between **Advertising Companies (ACs)** and **Real World Ad Space Owners (ASPs)** — powered by **DePIN**, on-chain incentives, and **cryptographically verified real-time engagement metrics**.
 
+We transform physical ads into secure, verifiable **Real World Assets (RWAs)** — democratizing advertising with transparency, fairness, and trust.
 
-🌐 ADMOJO Protocol
-Smarter Ads. Verified Views. Real Engagement.
-Welcome to ADMOJO Protocol — a decentralized bridge between Advertising Companies (ACs) and Real World Ad Space Owners (ASPs) powered by Decentralized Physical Infrastructure Networks (DePIN), on-chain incentives, and cryptographically verified real-time engagement metrics.
-Transforming physical ads into secure, verifiable Real World Assets (RWAs), ADMOJO Protocol democratizes advertising, ensuring transparency, fairness, and trust for all stakeholders. Say goodbye to opaque ad spend and unverifiable impressions.
+> Say goodbye to opaque ad spend and unverifiable impressions.
 
-🚀 Modules Breakdown
-1. 📸 admojo_web_server — Proof of Views Engine
-Goal: Quantify genuine human engagement with physical ads.
+---
 
-ESP32-CAM streams MJPEG video feeds over Wi-Fi
-GoCV + OpenCV (SSD + ResNet DNN) ensures accurate face detection
-Aggregates viewer counts every 5 minutes
-Sends cryptographically secure metrics to an off-chain oracle for on-chain integration
+## 📸 Visuals
 
-Highlights:
+### 💻 The UI
+![UI Preview](https://github.com/user-attachments/assets/20d4e5b8-748a-4765-b301-accabaea63fe)
 
-Dynamic IP support for seamless connectivity
-IoU filtering eliminates double counting
-Live bounding-box debug feed for real-time monitoring
+### 🔌 The Module
+![Module](https://github.com/user-attachments/assets/1e6948d4-4d05-4bd4-8f4f-57b16ca4387e)
 
+### 🧠 Proof of Views Algorithm in Action
+[Proof of Views Video](https://github.com/user-attachments/assets/e347fe3f-adbd-4892-976f-4bcf7bedf830)
 
-🔍 Ads aren’t just visible—they’re verifiable.
+---
 
+## 🚀 Modules Breakdown
 
-2. 📲 admojo_nfc_module — Proof of Taps IoT Writer
-Goal: Capture active user engagement through NFC interactions.
+### 1. 📸 `admojo_web_server` — Proof of Views Engine
 
-Powered by ESP32 WROOM with PN532 NFC module (SPI)
-Ultra-low power with deep sleep cycles
-Dynamically fetches campaign URLs with cryptographic security
-Writes NDEF-formatted MiFare Classic NFC tags
-Powers down PN532 to prevent interference
+> **Goal:** Quantify genuine human engagement with physical ads.
 
-Security First:
+- **ESP32-CAM** streams MJPEG video over Wi-Fi
+- Uses **GoCV + OpenCV (SSD + ResNet DNN)** for face detection
+- Aggregates viewer counts every 5 minutes
+- Sends metrics to an off-chain oracle → on-chain smart contracts
 
-Cryptographically enforced write control
-Tag locking with unique sector keys
-ADMOJO-signed firmware ensures authenticity
+**Highlights**:
+- Dynamic IP support for seamless connectivity
+- IoU filtering to avoid duplicate detection
+- Live bounding-box debug feed
 
+> _Ads aren’t just visible — they’re verifiable._
 
-✨ Passive views show interest; taps prove intent.
+---
 
+### 2. 📲 `admojo_nfc_module` — Proof of Taps IoT Writer
 
-3. 🌍 web-app (Campaign Hub) — Token Staking & Ad Management
-Features:
+> **Goal:** Capture active user engagement through NFC taps.
 
-Advertisers stake ADC tokens to launch campaigns
-Browse ASP locations with real-time traffic analytics, Proof-of-View metrics, and Tap ratios
-Schedule ad slots via an intuitive map interface
-Smart contracts auto-distribute tokens based on verified engagement
+- Powered by **ESP32 WROOM** + **PN532** (SPI)
+- Deep sleep enabled for ultra-low power consumption
+- Campaign URLs fetched dynamically & securely
+- NFC tags written with **NDEF-formatted MiFare Classic**
+- PN532 powered down post-write to prevent interference
 
-Web Stack:
+**Security**:
+- Cryptographic write control
+- Unique sector keys + tag locking
+- ADMOJO-signed firmware
 
-Next.js + TailwindCSS for a responsive UI
-Map integration for seamless ASP selection
-Metal API for efficient token management
+> _Passive views show interest; taps prove intent._
 
+---
 
-4. 🎯 web-app (User Engagement) — Rewards & Verification Portal
-Flow:
+### 3. 🌍 `web-app (Campaign Hub)` — Ad Management & Token Staking
 
-Users tap NFC-enabled ads, redirecting to a campaign mini-site
-Engage with rewards, giveaways, or tokens
-Verify interactions using Sybil-resistant mechanisms (e.g., World App Mini Apps)
-Log verified taps securely with ZK-proofs for anonymous demographic data
+> **For Advertisers:**
 
-Why it matters:
+- Stake **ADC tokens** to launch campaigns
+- Browse ASP locations with:
+  - Real-time traffic analytics
+  - Proof-of-View & Tap ratios
+- Schedule ad slots via map interface
+- Smart contracts auto-distribute tokens based on verified engagement
 
-Eliminates fraudulent interactions
-Rewards authentic engagement while preserving user privacy
+**Stack**:
+- `Next.js` + `TailwindCSS`
+- Map integration
+- Metal API for token logic
 
+---
 
-🔗 On-Chain Logic
+### 4. 🎯 `web-app (User Engagement)` — Rewards & Verification
 
-ADC Token: Staked by advertisers, distributed based on verified engagement
-Smart Contracts:
-Manage ADC token staking and campaign execution
-Automate token redistribution using verified metrics
-Read off-chain oracles for real-time Proof of Views and Taps
-Ensure transparent, auditable fund allocation
+> **Flow:**
 
+- Users tap NFC-enabled ads → redirected to campaign mini-site
+- Engage with rewards, giveaways, tokens
+- Sybil-resistance via **World App Mini Apps**
+- Verified taps logged securely with **ZK-proofs**
 
-ZK-Proofs: Enable privacy-preserving verification of viewer demographics
+**Why it matters**:
+- Filters fraudulent interactions
+- Ensures privacy + rewards authentic users
 
+---
 
-Actions are verifiable, auditable, and privacy-first.
+## 🔗 On-Chain Logic
 
+- **ADC Token**:
+  - Staked by advertisers
+  - Distributed based on real-world engagement
 
-💡 Why ADMOJO?
+- **Smart Contracts**:
+  - Handle ADC token staking + campaign execution
+  - Automate payouts from verified oracle data
 
-🧠 Real-Time Accuracy: Cryptographically secure engagement metrics
-📡 DePIN Integration: Trusted execution environments via secure elements
-🔐 Blockchain Transparency: Tokenized RWAs and transparent payouts
-🌐 Democratized Access: Empowering small ad space owners to compete
-💸 Performance-Based: Pay only for proven engagement
+- **ZK-Proofs**:
+  - Anonymously verify demographic engagement
+  - Preserve privacy without compromising transparency
 
-ADMOJO Protocol fosters fairness in advertising, just as Airbnb empowered small property owners. By tokenizing physical ad spaces and verifying engagement with DePIN, we create a level playing field for all.
+> _Actions are verifiable, auditable, and privacy-first._
 
-📅 MVP Milestones
+---
 
-✅ Subtask 1: ESP32-CAM views & secure oracle integration
-✅ Subtask 2: Secure NFC tag writing & dynamic URL updates
-✅ Subtask 3: Complete web dashboard & ADC staking
-⏳ Subtask 4: User rewards verification with ZK-proofs
-✅ Subtask 5: Smart contract integration for seamless payouts
+## 💡 Why ADMOJO?
 
+✅ **Real-Time Accuracy**  
+✅ **DePIN Integration**  
+✅ **Transparent Tokenized RWAs**  
+✅ **Democratized Access**  
+✅ **Performance-Based Payouts**
 
-🛠 Tech Stack
+> Like Airbnb unlocked income for property owners — ADMOJO empowers small ad space owners.
 
-Hardware: ESP32 WROOM/CAM, PN532, Secure Elements (SE)
-Software: Arduino IDE, GoCV, OpenCV
-Web: Next.js, TailwindCSS, TypeScript
-Blockchain & Verification: Solidity, Foundry, Metal API, ZK-Proofs, World App
-Data Integration: Secure off-chain oracles
+---
 
+## 📅 MVP Milestones
 
-👾 Join the ADMOJO Movement
-ADMOJO Protocol isn’t just ad tech—it’s a movement to democratize, verify, and empower the advertising ecosystem. Whether you’re building IoT devices, writing smart contracts, or designing user experiences, ADMOJO welcomes all innovators.
+- ✅ **Subtask 1**: ESP32-CAM views + secure oracle integration  
+- ✅ **Subtask 2**: Secure NFC tag writing & URL updates  
+- ✅ **Subtask 3**: Web dashboard + ADC staking  
+- ⏳ **Subtask 4**: ZK-Proof based user verification  
+- ✅ **Subtask 5**: Smart contract payout integration
 
-ADMOJO Protocol — where ads aren’t just seen, they’re proven and trusted.
+---
 
+## 🛠 Tech Stack
+
+| Layer        | Technologies                                   |
+|--------------|------------------------------------------------|
+| **Hardware** | ESP32 WROOM / CAM, PN532, Secure Elements      |
+| **Software** | Arduino IDE, GoCV, OpenCV                      |
+| **Web**      | Next.js, TailwindCSS, TypeScript               |
+| **Blockchain** | Solidity, Foundry, ZK-Proofs, Metal API     |
+| **User Auth**| World App Mini Apps                            |
+| **Data Flow**| Secure Off-Chain Oracles                       |
+
+---
+
+## 👾 Join the Movement
+
+ADMOJO isn’t just ad tech — it’s a movement to **democratize**, **verify**, and **empower** the real-world advertising ecosystem.
+
+Whether you’re a hardware hacker, blockchain dev, or UI/UX designer — **ADMOJO welcomes all builders.**
+
+> **ADMOJO Protocol** — _where ads aren’t just seen, they’re proven and trusted._

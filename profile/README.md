@@ -22,7 +22,8 @@ We transform physical ads into secure, verifiable **Real World Assets (RWAs)** â
 
 
 ### ðŸ§  Proof of Views Algorithm in Action
-https://github.com/user-attachments/assets/3d5c1920-0f42-4b53-b5f1-8830150adf55
+![WhatsApp Image 2025-04-06 at 05 53 26](https://github.com/user-attachments/assets/daeb98ae-3776-4c88-85b7-661600ddaa81)
+
 
 
 ---

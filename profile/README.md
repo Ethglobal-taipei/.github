@@ -17,7 +17,8 @@ We transform physical ads into secure, verifiable **Real World Assets (RWAs)** �
 
 
 ### 🔌 The Module
-![WhatsApp Image 2025-04-06 at 05 53 26](https://github.com/user-attachments/assets/a1f7c980-8fde-43c0-ba5f-404b0e04e832)
+![tapnfc](https://github.com/user-attachments/assets/eaa46a7c-238c-49b8-9807-832e9cd3330e)
+
 
 
 ### 🧠 Proof of Views Algorithm in Action

@@ -160,3 +160,8 @@ ADMOJO isn’t just ad tech — it’s a movement to **democratize**, **verify**
 Whether you’re a hardware hacker, blockchain dev, or UI/UX designer — **ADMOJO welcomes all builders.**
 
 > **ADMOJO Protocol** — _where ads aren’t just seen, they’re proven and trusted._
+
+## Founding Team
+https://x.com/0xanonviral
+https://x.com/rudransh190204
+https://x.com/mohak_sol

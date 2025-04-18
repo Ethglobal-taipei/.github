@@ -1,4 +1,4 @@
-# 🌐 ADMOJO Protocol
+# 🌐 ADMOJO Protocol (SEEKING GRANTS FOR PHASE1 Development)
 
 **Smarter Ads. Verified Views. Real Engagement.**
 
@@ -10,16 +10,19 @@ We transform physical ads into secure, verifiable **Real World Assets (RWAs)** �
 
 ---
 
-## 📸 Visuals
+## 📸 Our Phase-1 progress:
 
 ### 💻 The UI
-![UI Preview](https://github.com/user-attachments/assets/20d4e5b8-748a-4765-b301-accabaea63fe)
+![WhatsApp Image 2025-04-06 at 06 03 24 (1)](https://github.com/user-attachments/assets/a3a2dee2-f39b-4e58-8e0d-de6630502c4e)
+
 
 ### 🔌 The Module
-![Module](https://github.com/user-attachments/assets/1e6948d4-4d05-4bd4-8f4f-57b16ca4387e)
+![WhatsApp Image 2025-04-06 at 05 53 26](https://github.com/user-attachments/assets/a1f7c980-8fde-43c0-ba5f-404b0e04e832)
+
 
 ### 🧠 Proof of Views Algorithm in Action
-[Proof of Views Video](https://github.com/user-attachments/assets/e347fe3f-adbd-4892-976f-4bcf7bedf830)
+https://github.com/user-attachments/assets/3d5c1920-0f42-4b53-b5f1-8830150adf55
+
 
 ---
 
